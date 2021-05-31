@@ -34,12 +34,12 @@
         <form class="form" action="#" method="POST">
           <div class="form__item">
             <label for="name">Ваше <span class="form__name">имя</span></label>
-            <input type="text" id="name" name="name" placeholder="Алексей">
+            <input type="text" id="name" name="name" placeholder="Алексей" required>
           </div>
           <div class="form__wrapper">
             <div class="form__item">
               <label for="tel">Ваш <span class="form__name">телефон</span></label>
-              <input type="tel" id="tel" name="tel" placeholder="+7 (123) 456 78-90">
+              <input type="tel" id="tel" name="tel" pattern="^\+7\d{3}\d{7}$" maxlength="12" placeholder="+7 (123) 456 78-90" required>
             </div>
             <div class="form__item">
               <div class="form__dropdown">

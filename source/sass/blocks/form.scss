@@ -27,12 +27,24 @@
     background: #F8F8F8;
     border: 1px solid #E4E4E4;
     border-radius: 5px;
+    font-family: $main_font;
     font-weight: 600;
     font-size: 14px;
     line-height: 130%;
-    letter-spacing: 0.05em;
     margin-bottom: 20px;
     padding: 16px 10px;
+  
+    &:focus {
+      border: 1px solid #444444;
+    }
+
+    &:focus:valid {
+      border: 1px solid #428A60;
+    }
+  
+    &:focus:invalid {
+      border: 1px solid #ff8182;
+    }
   }
 
   ::-webkit-input-placeholder {
@@ -73,6 +85,7 @@
     list-style: none;
     margin-top: 5px;
     padding: 16px 10px;
+    cursor: pointer;
   }
 
   &__dropdowm-item-descr {
@@ -121,6 +134,12 @@
   .form {
     margin: 52px 0 60px 0;
     padding: 0 123px 0 117px;
+
+    input[type=text],
+    input[type=tel] {
+      padding-left: 20px;
+      padding-right: 25px;
+    }
 
     &__wrapper .form__item:nth-child(1) {
       width: 184px;

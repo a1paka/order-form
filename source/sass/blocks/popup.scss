@@ -18,6 +18,7 @@
     font-size: 30px;
     line-height: 130%;
     text-align: center;
+    word-wrap: break-word;
   }
 
   &__button-wrapper {
@@ -38,6 +39,15 @@
     color: #fff;
     font-size: 14px;
     padding: 12px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: #52a876;
+    }
+
+    &:active {
+      background: #286842;
+    }
   }
 
   &__button-arrow {
@@ -55,8 +65,9 @@
 
 @media (min-width: $desktop-width) {
   .popup {
+    width: 1120px;
     padding: 0;
-    margin: 75px 80px;
+    margin: 75px auto;
 
     &__wrapper {
       display: flex;
@@ -66,7 +77,6 @@
 
     &__main {
       width: 560px;
-      height: 138px;
       background-color: #F8F8F8;
       border-top-right-radius: 24px; 
       padding: 0;
@@ -74,11 +84,11 @@
     }
 
     &__header {
-      padding: 29px 128px 0 129px;
+      padding: 29px 128px 29px 129px;
     }
 
     &__button-wrapper {
-      margin-top: 17px;
+      margin-top: 19px;
     }
 
     &__button {
