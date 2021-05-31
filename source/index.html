@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet"> 
+  <title>Форма заказа</title>
+</head>
+<body>
+
+  <main class="popup">
+    <div class="popup__wrapper">
+      
+      <section class="banner">
+        <div class="banner__header">
+          <p class="banner__pill-name">Reduslim</p>
+          <p class="banner__pill-info">Eco</p>
+        </div>
+        <div class="banner__logo">
+          <div class="banner__logo-bg"></div>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/pills-desktop.png">
+            <img class="banner__logo-image" src="img/pills-mobile.png" alt="Логотип">
+          </picture>
+        </div>
+      </section>
+
+      <div class="popup__main-wrapper">
+        <section class="popup__main">
+          <h1 class="popup__header">Сделай шаг к выздоровлению</h1>
+        </section>
+        <form class="form" action="#" method="POST">
+          <div class="form__item">
+            <label for="name">Ваше <span class="form__name">имя</span></label>
+            <input type="text" id="name" name="name" placeholder="Алексей">
+          </div>
+          <div class="form__wrapper">
+            <div class="form__item">
+              <label for="tel">Ваш <span class="form__name">телефон</span></label>
+              <input type="tel" id="tel" name="tel" placeholder="+7 (123) 456 78-90">
+            </div>
+            <div class="form__item">
+              <div class="form__dropdown">
+                <div class="form__dropdowm-item">
+                  <a class="form__dropdowm-item-descr" onclick="myFunction()" class="drop">
+                    Ru
+                    <img src="img/rus.svg" width="26.18" height="18" alt="русский язык">
+                    <img class="form__arrow" src="img/arrow.svg" width="8" height="4" alt="стрелка вниз">
+                  </a>
+                </div>
+                  <!-- <div class="form__dropdown-content" id="dropdown">
+                    En<img src="img/rus.svg" width="26.18" height="18" alt="английский язык">
+                  </div> -->
+              </div> 
+            </div>
+          </div>
+          <div class="popup__button-wrapper">
+            <button class="popup__button" type="submit">Заказать
+              <img class="popup__button-arrow" src="img/arrow-right.svg" width="15" height="10" alt="стрелка вправо">
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mobile-footer">
+    <div class="mobile-footer__wrapper">
+      <p>Trusted</p>
+      <img src="img/lock.svg" width="12.14" height="15" alt="замок">
+      <p>Secure</p>
+    </div>
+  </footer>
+  
+  <script src="js/script.min.js"></script>
+</body>
+</html>

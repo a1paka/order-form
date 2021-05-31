@@ -1,0 +1,89 @@
+.banner {
+  padding: 0;
+  margin: 0;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__pill-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  &__pill-info {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    position: relative;
+    margin-top: 9px;
+  }
+
+  &__logo-bg {
+    width: 202px; 
+    height: 202px;
+    background: #428A60;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  &__logo-image {
+    position: absolute;
+    top: 48px;
+    left: 60%;
+    transform: translateX(-59%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .banner {
+    &__logo-image {
+      position: absolute;
+      top: 48px;
+      left: 55%;
+      transform: translateX(-59%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    width: 560px;
+    height: 500px;
+    background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+    border-radius: 1px;
+
+    &__logo {
+      margin-top: 0;
+    }
+
+    &__logo-bg {
+      position: relative;
+      width: 398px; 
+      height: 398px;
+      top: 70px;
+      left: -60px;
+    }
+
+    &__logo-image {
+      top: 80px;
+      left: 59%;
+      transform: translateX(-59%);
+    }
+
+    &__header {
+      position: absolute;
+      flex-direction: column;
+      margin: 40px 40px 0 40px;
+      color: #fff;
+      height: 425px;
+    }
+  }
+}
